@@ -19,7 +19,7 @@ class Header extends Component {
       <header>
         <Jumbotron >
           <Container>
-            <h1>Welcome to the world of Printmaking!</h1>
+            <h1>Welcome to the Portal!</h1>
             <p>Check out the links to our favorite topics below or explore your own.</p>
             <NavBar history={this.addToLinkToHistory} />
           </Container>

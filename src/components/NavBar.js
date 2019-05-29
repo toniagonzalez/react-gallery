@@ -16,13 +16,13 @@ const NavBar = (props)=> {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/screenprints" aria-label="screenprints">
-              Screenprints
+            <NavLink exact to="/sketches" aria-label="sketches">
+              Sketches
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/monoprints" aria-label="monoprints">
-              Monoprints
+            <NavLink exact to="/paintings" aria-label="paintings">
+              Paintings
             </NavLink>
           </li>
         </ul>

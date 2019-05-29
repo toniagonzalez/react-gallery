@@ -34,16 +34,22 @@ h1 {
 
 /*-------------------Favorites List Styles--------------------------*/
 
-ul,
+
+nav.navbar {
+  padding: 0;
+}
+
 nav.navbar ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-content: center;
+  display: inline-block;
+  width: 90%;
+  margin: auto 0;
+  text-align: center;
   padding: 0;
 }
 
 nav.navbar li {
   list-style: none;
+  margin: 20px;
 }
 
 a {
@@ -52,12 +58,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  width: 150px;
+  width: 250px;
   height: 25px;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 
@@ -88,21 +93,25 @@ a.active {
   justify-content: space-around;
 }
 
-.gallery li {
+.gallery li{
   list-style: none;
+}
+
+.gallery img {
   transform: scale(1.25);
   transition: transform 1.25s;
 }
 
 .gallery li:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 
 .photo {
-  width: 250px;
-  height: 200px;
-  margin: 40px 20px;
+  width: 220px;
+  height: 165px;
+  margin: 40px 5px;
   border: 5px double black;
+  box-sizing: border-box;
 }
 
 .not-found {
@@ -120,4 +129,39 @@ a.active {
   text-align: center;
   margin-top: 10px;
   text-shadow: none;
+}
+
+
+@media only screen and (min-width: 768px)  {
+
+  ul,
+  nav.navbar ul {
+    display: inline-flex;
+    width:inherit;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  nav.navbar li {
+    margin: 10px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px)  {
+
+  .gallery {
+    max-width: 1000px;
+    margin: auto 0;
+  }
+
+  .photo {
+    width: 250px;
+    height: 200px;
+    margin: 40px 25px;
+  }
+
 }

@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   performSearch = (query) => {
-    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${this.state.query}&per_page=21&format=json&nojsoncallback=1`)
+    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${this.state.query}&per_page=24&format=json&nojsoncallback=1`)
       .then(data => {
         this.setState({
             photos: data.data.photos.photo,
@@ -63,6 +63,7 @@ class App extends Component {
               <Route
               path="/:inputValue"
               render={(props) => (<SearchResults  loading={this.state.loading}
+              error={this.state.error}
               photos={this.state.photos}
               query={props.match.params.inputValue}
               handleQuery={this.handleQuery}
