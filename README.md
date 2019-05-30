@@ -3,7 +3,12 @@
 Hello there,
 I created this gallery app with [Create React App](https://github.com/facebook/create-react-app).
 
-In order to run this gallery program you will need to obtain a Flickr API key and create a config.js file to save and use your key. Create the config.js file in the src folder and save and export the key as `apiKey`.  And lastly run npm start/yarn start to view the gallery!
+In order to run this gallery program you will need to:
+
+-Run npm install
+-Obtain a Flickr API key and add it to the `mock-config.js` file in the /src folder and uncomment the code.
+-Rename the `mock-config` file and save it as `config.js` in order to use your key.  
+-And lastly run npm start/yarn start to view the gallery!
 
 
 ### `npm start`
